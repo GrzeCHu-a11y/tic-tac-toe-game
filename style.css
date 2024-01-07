@@ -1,0 +1,39 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: auto;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: #5A1E76;
+}
+
+.container {
+    width: clamp(300px, 50%, 500px);
+    height: 600px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #2B0040;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.stats-container {
+    display: flex;
+    flex-direction: row;
+    color: white;
+}
+
+.board {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 100px);
+    grid-gap: 5px;
+}
+
+.box {
+    background-color: #43115B;
+    border-radius: 5px;
+    cursor: pointer;
+}
