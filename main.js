@@ -1,6 +1,7 @@
 const box = document.querySelectorAll(".box");
 const statX = document.querySelector(".statX");
 const statO = document.querySelector(".statO");
+const currPlayerStat = document.querySelector(".currPlayerStat");
 
 const winVariants = [
     [0, 1, 2],
@@ -19,9 +20,12 @@ let round = 1;
 let xWin = 0;
 let oWin = 0;
 
+document.onload
+
 const start = (e) => {
     currentPlayer = currentPlayer == "X" ? "O" : "X";
     e.target.innerHTML = currentPlayer;
+    currPlayerStat.innerHTML = currentPlayer == "X" ? "O" : "X";
     checkWinner()
 }
 
