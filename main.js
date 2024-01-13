@@ -30,7 +30,8 @@ const checkWinner = () => {
         const c = box[variant[2]].innerHTML;
 
         if (a !== "" && a === b && b === c) {
-            alert(`Player ${a} wins!`);
+            alert(`Player ${a} wins!`); 
+            box.forEach((box) => box.innerHTML = "")
         }
     }
 }
