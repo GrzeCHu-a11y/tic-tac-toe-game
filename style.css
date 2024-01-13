@@ -8,6 +8,10 @@ body {
     font-family: "Salsa", cursive;
     font-weight: 400;
     font-style: normal;
+    background-image: url("tic.\ tac.toe..png");
+    background-position: left bottom 100%;
+    background-repeat: no-repeat;
+    background-size: 600px;
 }
 
 .container {
