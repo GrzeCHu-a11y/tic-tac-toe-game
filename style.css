@@ -5,6 +5,9 @@ body {
     width: 100%;
     box-sizing: border-box;
     background-color: #5A1E76;
+    font-family: "Salsa", cursive;
+    font-weight: 400;
+    font-style: normal;
 }
 
 .container {
