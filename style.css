@@ -23,6 +23,11 @@ body {
     display: flex;
     flex-direction: row;
     color: white;
+    justify-content: space-between;
+}
+
+.statBox {
+    text-align: center;
 }
 
 .board {
@@ -36,4 +41,6 @@ body {
     background-color: #43115B;
     border-radius: 5px;
     cursor: pointer;
+    font-size: 90px;
+    text-align: center;
 }

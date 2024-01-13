@@ -1,4 +1,6 @@
 const box = document.querySelectorAll(".box");
+const statX = document.querySelector(".statX");
+const statO = document.querySelector(".statO");
 
 const winVariants = [
     [0, 1, 2],
@@ -14,7 +16,8 @@ const winVariants = [
 let currentPlayer = "X";
 
 let round = 1;
-
+let xWin = 0;
+let oWin = 0;
 
 const start = (e) => {
     currentPlayer = currentPlayer == "X" ? "O" : "X";
@@ -31,7 +34,11 @@ const checkWinner = () => {
 
         if (a !== "" && a === b && b === c) {
             alert(`Player ${a} wins!`); 
-            box.forEach((box) => box.innerHTML = "")
+            box.forEach((box) => box.innerHTML = "");
+            if (a === "O") {
+                oWin++
+                statO.innerHTML = oWin;
+            } else xWin++, statX.innerHTML = xWin;
         }
     }
 }
